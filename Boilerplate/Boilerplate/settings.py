@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     # Third-party apps
     'rest_framework',
     'channels',
-    'django_celery_results',
+    # 'django_celery_results',
 
     # Proprietary apps
     'api.apps.ApiConfig',
@@ -159,7 +159,7 @@ LOGGING = {
     'handlers': {
         'mp_handler': {
             'level': 'DEBUG',
-            'class': 'Augur.mphandler.MultiProcessingHandler',
+            'class': 'Boilerplate.mphandler.MultiProcessingHandler',
             'formatter': 'verbose'
         }
     },
